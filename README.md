@@ -1,42 +1,27 @@
-# Project ID - EC108A
+# devWrap-2024❤️
 
-# Hacking Guide for Campus Tour 😎
+We love this 
 
-## .Campus Tour 🤞
+## Project Id-EC108A 🤖
 
-It is a E-commerce made with HTML CSS 😊
+It is a E-commerce made by HTML CSS and JS
 
+### Featurs 🚀
 
-## How to setup it on your device ?? 🤔
+1. know about academy of technology
+2. A campus tour
+3. connet with us
+4. social sites
 
-### 🤞 Step 1
+## This website is made our team "TECHBYTES"😎
 
-Click on Fork and rename it as
+we love this project learn a little bit but it was full of enjoymenmt 🎉
 
-#### TeamName_ProjectID
-### 🤞 Step 2 
-Copy the https link from Code Section
+### Our team member
 
-#### Open Command Prompt and type
+1. Srijan sur 🧑‍🦱
+2. Subhajit Roy 🧔‍♂️
+3. Srija Roy 👩‍🦰
+4. sourav Kumbhakar 🧑‍🦱
 
-```http
-  cd desktop
-  git clone <https link>
-```
-Now the project is on your desktop now open it with your code editor
-now you are got to go for hacking !!
-
-
-## 😒 What You are  able to change? 
-1. Given Colors
-2. Logo
-3. Landing page Image
-4. Landing Text Design
-5. Make it a single page on scroll or multipage as you wish
-
-
-
-
-## 👌 Ask your doubt on Discord
-
-[Click Here](https://discord.com/invite/8qJBt5pby5)  👈👈
+————————————
