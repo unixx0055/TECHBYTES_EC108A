@@ -7,19 +7,18 @@
 
   <body>
     <div class="main">
-
-        <!-- Navigation Bar -->
+      <!-- Navigation Bar -->
 
       <div class="navbar">
         <div class="icon">
           <img src="images/logo.png" alt="logo" />
         </div>
         <ul class="menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">CAMPUS_TOUR</a></li>
+          <li class="list-item"><a href="#">HOME</a></li>
+          <li class="list-item"><a href="#about">ABOUT</a></li>
+          <li class="list-item"><a href="#">CAMPUS_TOUR</a></li>
 
-          <li><a href="#">CONTACT</a></li>
+          <li class="list-item"><a href="#">CONTACT</a></li>
         </ul>
 
         <div class="search">
@@ -31,24 +30,77 @@
           />
           <a href="#"> <button class="btn">Search</button></a>
         </div>
+        <div class="three-line">
+            <ion-icon name="reorder-three-outline"></ion-icon>
+        </div>
       </div>
 
       <!-- content -->
-      
+
       <div class="content">
         <div class="poster-text">
-            <h1>AOT CAMPUS <br /><span>TOUR</span> <br />WEBSITE</h1>
-            <p class="par">
-                
-            </p>
+          <h1>AOT CAMPUS <br /><span>TOUR</span> <br />WEBSITE</h1>
+          <p class="par"></p>
 
-            <button class="cn"><a href="#">JOIN US</a></button>
+          <button class="cn"><a href="#">JOIN US</a></button>
         </div>
         <div class="poster">
-            <img src="images/image.png" alt="">
+          <img src="images/image.png" alt="" />
         </div>
       </div>
+      <div class="about" id="about">
+        <h1>About</h1>
+        <br />
+        <p>
+          This website is a guide for your campus tour in academy of technology
+          <br />
+          this collage has a big and beutifull campus. The education curicullam
+          is well prepared.
+          <br />
+          <br />
+          || This collage have several engineering course ||
+        </p>
+        <br />
+        <h3>1. Computer Science and Engineering</h3>
+        <h3>2. Electronics and Communication Engineering</h3>
+        <h3>3. Electrical Engineering</h3>
+        <h3>4. Electronics and Electronics Engineering</h3>
+        <h3>5. Computer Science and Buissness</h3>
+      </div>
+
+      <!-- footer -->
+
+      <footer>
+        <div class="row">
+          <div class="col">
+            <img src="images/logo.png" alt="logo" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              totam, esse debitis vitae assumenda praesentium sit nostrum,
+            </p>
+          </div>
+          <div class="col">
+            <h3>Adress</h3>
+            <p>Grand Tank Road</p>
+            <p>Adisaptagram</p>
+            <p>Adecconagar , Bandel</p>
+            <p>Hoogly , 721212</p>
+            <p class="email">academy.of.technology@aot.edu.in</p>
+            <h4>+91 9883464589</h4>
+          </div>
+          <div class="col">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Campus Tour</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
