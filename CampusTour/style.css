@@ -191,7 +191,7 @@ footer{
     bottom: 0;
     background: linear-gradient(to right, #00093c,#2d0b00);
     color: #fff;
-    padding: 50px 0 30px;
+    padding: 100px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
@@ -207,17 +207,18 @@ footer{
     width: 85%;
     margin: auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
 }
 
 .col{
-    flex-basis: 25%;
+    flex-basis: 10%;
     padding: 10px;
 }
 
-h3{
+.col h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
@@ -236,6 +237,46 @@ h3{
 .col ul li a{
     text-decoration: none;
     color: #fff;
+}
+
+.col form{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin bottom: 50px;
+}
+
+.col form ion-icon{
+    font-size: 20px;
+    color: #b9b2b296;
+}
+
+form input{
+    padding: 0 10px;
+    width: 100px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+form button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.social-icon ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.social-icon ul li a ion-icon{
+    font-size: 20px;
 }
 
 /* responsive */
