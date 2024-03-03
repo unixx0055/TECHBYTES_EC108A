@@ -323,4 +323,9 @@ form button{
         width: 400px;
     }
     
+    footer{
+        height: 100%;
+        font-size: 10px;
+    }
+
 }
