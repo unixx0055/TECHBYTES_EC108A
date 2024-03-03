@@ -13,7 +13,7 @@ It is a E-commerce made by HTML CSS and JS
 3. connet with us
 4. social sites
 
-## This website is made our team "TECHBYTES"😎
+## This website is made by our team "TECHBYTES"😎
 
 we love this project learn a little bit but it was full of enjoymenmt 🎉
 
@@ -22,6 +22,6 @@ we love this project learn a little bit but it was full of enjoymenmt 🎉
 1. Srijan sur 🧑‍🦱
 2. Subhajit Roy 🧔‍♂️
 3. Srija Roy 👩‍🦰
-4. sourav Kumbhakar 🧑‍🦱
+4. Sourav Kumbhakar 🧑‍🦱
 
 ————————————
