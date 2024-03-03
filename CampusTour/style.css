@@ -173,8 +173,8 @@ body {
 /* about */
 
 .about{
-    padding-top: 170px;
-    padding-bottom: 50px;
+    padding-top: 160px;
+    padding-bottom: 200px;
     padding-left: 9%;
     color: white;
 }
@@ -280,6 +280,13 @@ form button{
     font-size: 20px;
 }
 
+footer hr{
+    width: 90%;
+    margin: 10px auto;
+}
+.copyright{
+   text-align: center;
+}
 /* responsive */
 
 @media only screen and (max-width: 700px) {
