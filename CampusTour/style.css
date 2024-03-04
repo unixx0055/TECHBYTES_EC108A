@@ -120,6 +120,7 @@ body {
 
 .content {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 10vw;
     height: auto;
@@ -170,6 +171,79 @@ body {
     font-size: 65px
 }
 
+/* campus tour */
+
+.campus{
+    padding: 200px 9%;
+}
+
+.buildings{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+
+    min-height: 150px;
+    min-width: 150px;
+    border: 1px solid;
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    background: #dfd9ec;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 600ms ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    filter: brightness(1.1);
+}
+
+.card:first-child{
+    background-image: url(images/building.png);
+    background-size: 70%;
+
+}
+
+.card:nth-child(2){
+    background-image: url(images/garden.png);
+    background-size: 70%;
+}
+
+.card:nth-child(3){
+    background-image: url(images/ball.png);
+    background-size: 70%;
+}
+
+
+.card:nth-child(4){
+    background-image: url(images/teacher.png);
+    background-size: 75%;
+}
+.card h3{
+    margin-top: 170px;
+}
+.campus-text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+.campus-text img{
+    width: 64px;
+    margin-left: 20px;
+}
+
+.campus hr{
+    margin-bottom: 50px;
+    height: 3px;
+}
+
 /* about */
 
 .about{
@@ -177,6 +251,10 @@ body {
     padding-bottom: 200px;
     padding-left: 9%;
     color: white;
+}
+.about hr{
+
+    height: 3px;
 }
 
 .about h3{
