@@ -173,11 +173,16 @@ body {
 
 /* campus tour */
 
-.campus{
-    padding: 200px 9%;
+ .campus-text{
+    padding-top: 200px;
+    padding-left: 9%;
+ }
+.campus hr{
+    margin-left: 9%;
+    width: 80%;
 }
-
 .buildings{
+    padding: 0 5%;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -225,6 +230,14 @@ body {
     background-image: url(images/teacher.png);
     background-size: 75%;
 }
+.card:nth-child(5){
+    background-image: url(images/academic.png);
+    background-size: 80%;
+}
+.card:nth-child(6){
+    background-image: url(images/consart.png);
+    background-size: 120%;
+}
 .card h3{
     margin-top: 170px;
 }
@@ -243,19 +256,105 @@ body {
     margin-bottom: 50px;
     height: 3px;
 }
+/* department */
+
+.department h1{
+    padding-top: 200px;
+    padding-left: 9%;
+    color: #fff;
+}
+
+.department hr{
+    margin-left: 9%;
+    width: 80%;
+    height: 3px;
+}
+
+.dep-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 9%;
+    gap: 20px;
+
+}
+
+.dep{
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0.5);
+    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
+    cursor: pointer;
+}
+
+.dep:first-child{
+    background-image: url(images/lap.png);
+    background-size: 50%;
+}
+
+.dep:nth-child(2){
+    background-image: url(images/proc.png);
+    background-size: 50%;
+}
+.dep:nth-child(3){
+    background-image: url(images/cir.png);
+    background-size: 50%;
+}
+
+.dep:nth-child(4){
+    background-image: url(images/csbs.png);
+    background-size: 50%;
+}
+
+.dep:nth-child(5){
+    background-image: url(images/ee.png);
+    background-size: 50%;
+}
+
+.dep:nth-child(6){
+    background-image: url(images/mca.png);
+    background-size: 50%;
+}
+
+.dep h4{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.dep:hover{
+    filter: grayscale(0);
+}
 
 /* about */
 
 .about{
-    padding-top: 160px;
+    margin-top: 100px;
+    padding-top: 80px;
     padding-bottom: 200px;
     padding-left: 9%;
     color: white;
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 100px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    
 }
+
+.abt-head{
+    display: flex;
+    align-items: center;
+}
+
+ .abt-head ion-icon{
+    font-size: 50px;
+ }
 .about hr{
 
     height: 3px;
-    width: 90%;
+    width: 89%;
 }
 
 .about h3{
@@ -265,16 +364,35 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    padding: 3% 2%;
+    border-radius: 18px;
+    margin-right: 9%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
 }
 #gate{
     height: 200px;
     width: 350px;
+    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
     background-image: url(images/gate.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
 }
+
+.abt-par{
+    margin-right: 9%;
+}
+
+.gate-text,.abt-par{
+    padding: 3%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
+    border-radius: 16px;
+}
+
+
+
 .fdr-abt{
     display: flex;
     flex-wrap: wrap;
@@ -283,8 +401,24 @@ body {
 .fdr-text{
     margin-top: auto;
 }
-.fdr-abt img{
+.fdrimg{
+    height: 100px;
     width: 100px;
+    border-radius: 50%;
+    background-image: url(images/jb.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110%;
+    transition: 600ms ease;
+}
+
+
+.fdrimg:hover{
+    box-shadow: 0 0 20px white;
+}
+
+.gate{
+    
 }
 
 /* footer */
@@ -296,7 +430,6 @@ footer{
     background: linear-gradient(to right, #00093c,#2d0b00);
     color: #fff;
     padding: 100px 0 30px;
-    border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }   
