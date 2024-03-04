@@ -255,12 +255,37 @@ body {
 .about hr{
 
     height: 3px;
+    width: 90%;
 }
 
 .about h3{
     line-height: 30px;
 }
-
+.gate{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#gate{
+    height: 200px;
+    width: 350px;
+    background-image: url(images/gate.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.fdr-abt{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.fdr-text{
+    margin-top: auto;
+}
+.fdr-abt img{
+    width: 100px;
+}
 
 /* footer */
 
