@@ -419,10 +419,6 @@ body {
     box-shadow: 0 0 20px white;
 }
 
-.gate{
-    
-}
-
 /* footer */
 
 footer{
@@ -484,7 +480,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
-    margin bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .col form ion-icon{
