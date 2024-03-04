@@ -6,6 +6,14 @@ We love this
 
 It is a E-commerce made by HTML CSS and JS
 
+### What we make ??😎
+1. A Beautifull Navbar with amezing hover📌
+2. A Cool Search Bar 🔎
+3. Amezing section ☑️
+4. Cool Card Effect 🎴
+5. Awsome About section 📝
+6. proffesional Footer 🐾
+
 ### Featurs 🚀
 
 1. know about academy of technology
