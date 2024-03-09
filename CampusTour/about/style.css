@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main{
+    height: 100%;
+    width: 100vw;
+    
+}
+
+.about{
+    padding-top: 80px;
+    padding-bottom: 200px;
+    padding-left: 9%;
+    color: white;
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 100px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    
+}
+
+.abt-head{
+    display: flex;
+    align-items: center;
+}
+
+ .abt-head ion-icon{
+    font-size: 50px;
+ }
+.about hr{
+
+    height: 3px;
+    width: 89%;
+}
+
+.about h3{
+    line-height: 30px;
+}
+.gate{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 3% 2%;
+    border-radius: 18px;
+    margin-right: 9%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+}
+#gate{
+    height: 200px;
+    width: 350px;
+    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
+    background-image: url(gate.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.abt-par{
+    margin-right: 9%;
+}
+
+.gate-text,.abt-par{
+    padding: 3%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
+    border-radius: 16px;
+}
+
+
+
+.fdr-abt{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.fdr-text{
+    margin-top: auto;
+}
+.fdrimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(jb.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110%;
+    transition: 600ms ease;
+}
+
+
+.fdrimg:hover{
+    box-shadow: 0 0 20px white;
+}
