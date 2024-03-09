@@ -1,70 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
 
-body {
-    background-image: url(images/aotcampus.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+html{
+    font-size: 63.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
-.main {
+.header{
     position: fixed;
-    width: 100vw;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Navigation Bar */
-
-.navbar{
+    top: 0;left: 0; right: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    z-index: 100;
+    background: transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
-    background: transparent;
-    /* border-bottom: 1px solid rgba(255,255,255,.5); */
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    backdrop-filter: blur(20px);
 }
 
-.menu{
+.logo img{
+    filter: brightness(1.5);
+}
+
+.navbar ul{
     display: flex;
-    list-style: none;
+    font-size: 2rem;
     align-items: center;
+    justify-content: space-around;
 }
 
-.icon img{
-    width: 100px;
-    filter: brightness(2);
-}
-.menu .list-item{
-    padding: 15px 16px;
+.navbar ul li{
+    margin: 0 1.5rem;
+    padding: 12px 16px;
     border-radius: 10px;
     transition: 400ms ease;
 }
-.list-item a{
+
+.navbar li a{
     text-decoration: none;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 
 }
-.main .list-item:hover{
+.navbar li:hover{
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+.nav-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search{
@@ -82,15 +83,9 @@ body {
     outline: none;
     color: #fff;
     padding: 6px 6px;
-
 }
 
-::placeholder {
-    color: #ffffff91;
-    font-family: Arial;
-}
-
-.btn{
+.search button{
     outline: none;
     border: none;
     padding: 6px 6px;
@@ -104,323 +99,165 @@ body {
     transition: 300ms ease;
 }
 
-.btn:hover{
-    filter: grayscale(0);
+.bars{
+    font-size: 4.5rem;
+    font-weight: bolder;
+    display: none;
+    cursor: pointer;
 }
 
-.three-line{
-    height: 60px;
-    width: 60px;
-    font-size: 60px;
-    border-radius: 50px;
-    /* border: 1px solid; */
+.close{
+    font-size: 5rem;
     display: none;
+    cursor: pointer;
 }
-/* Contaent */
+
+/* content */
+
+.home{
+    padding: 0;
+    position: relative;
+}
+
+.box{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+
+}
+
+.box span{
+    font-size: 4rem;
+    color: rgb(43, 40, 40);
+}
+
+.box h3{
+    font-size: 6rem;
+    color: rgb(28, 171, 28);
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.box p{
+    line-height: 2;
+    color: rgb(47, 44, 44);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    color: white;
+    background: none;
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+
+    color: black;
+
+}
+
+
+/* content section*/
 
 .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 10vw;
-    height: auto;
-    margin: auto;
-    padding: 10px 50px;
-    color: #fff;
-    position: relative;
-
+    justify-content: center;
 }
 
-.content h1 {
-    font-family: "Poppins";
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.content .cn {
-    width: 160px;
-    height: 50px;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    border: none;
+.content .slogan{
+    text-align: center;
     margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 600ms ease;
-
 }
 
-.content .cn a {
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
+.content h1{
+    font-size: 4rem;
 }
 
-.cn:hover {
-    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+.content h4{
+    font-size: 2rem;
+}
+.content p{
+    font-size: 1.5rem;
+}
+
+.campus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
     
 }
-
-.content span {
-    color: #71c9f2;
-    font-size: 65px
-}
-
-/* campus tour */
-
- .campus-text{
-    padding-top: 200px;
-    padding-left: 9%;
- }
-.campus hr{
-    margin-left: 9%;
-    width: 80%;
-}
-.buildings{
-    padding: 0 5%;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex-wrap: wrap;
+.cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        p{
+            font-size: 1rem;
+        }
+        cursor: pointer;
+        flex-flow: ;
 }
 
 .card{
 
-    min-height: 150px;
-    min-width: 150px;
-    border: 1px solid;
+    /* border: 1px solid ; */
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid; */
     padding: 1.5rem;
     border-radius: 16px;
     text-align: center;
-    background: #dfd9ec;
+    /* background: #dfd9ec; */
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: -1rem 0 3rem #000;
     transition: 600ms ease;
+   
+    
 }
-
-.card:hover{
-    transform: translateY(-10px);
-    filter: brightness(1.1);
-}
-
-.card:first-child{
+.card.one{
     background-image: url(images/building.png);
     background-size: 70%;
-
 }
 
-.card:nth-child(2){
+.card.two{
     background-image: url(images/garden.png);
     background-size: 70%;
 }
-
-.card:nth-child(3){
-    background-image: url(images/ball.png);
+.card.three{
+    background-image: url(images/teacher.png);
     background-size: 70%;
 }
-
-
-.card:nth-child(4){
-    background-image: url(images/teacher.png);
-    background-size: 75%;
-}
-.card:nth-child(5){
-    background-image: url(images/academic.png);
-    background-size: 80%;
-}
-.card:nth-child(6){
+.card.four{
     background-image: url(images/consart.png);
-    background-size: 120%;
-}
-.card h3{
-    margin-top: 170px;
-}
-.campus-text{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: white;
-}
-.campus-text img{
-    width: 64px;
-    margin-left: 20px;
+    background-size: 130%;
 }
 
-.campus hr{
-    margin-bottom: 50px;
-    height: 3px;
-}
-/* department */
 
-.department h1{
-    padding-top: 200px;
-    padding-left: 9%;
-    color: #fff;
-}
-
-.department hr{
-    margin-left: 9%;
-    width: 80%;
-    height: 3px;
-}
-
-.dep-card{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-left: 9%;
-    gap: 20px;
-
-}
-
-.dep{
-    height: 100px;
-    width: 100px;
-    background: #fff;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: grayscale(0.5);
-    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
-    cursor: pointer;
-    transition: 600ms ease;
-}
-
-.dep:first-child{
-    background-image: url(images/lap.png);
-    background-size: 50%;
-}
-
-.dep:nth-child(2){
-    background-image: url(images/proc.png);
-    background-size: 50%;
-}
-.dep:nth-child(3){
-    background-image: url(images/cir.png);
-    background-size: 50%;
-}
-
-.dep:nth-child(4){
-    background-image: url(images/csbs.png);
-    background-size: 50%;
-}
-
-.dep:nth-child(5){
-    background-image: url(images/ee.png);
-    background-size: 50%;
-}
-
-.dep:nth-child(6){
-    background-image: url(images/mca.png);
-    background-size: 50%;
-}
-
-.dep h4{
-    text-align: center;
-    margin-top: 70px;
-}
-
-.dep:hover{
-    transform: translateY(-5px);
-    filter: grayscale(0);
-}
-
-/* about */
-
-.about{
-    margin-top: 100px;
-    padding-top: 80px;
-    padding-bottom: 200px;
-    padding-left: 9%;
-    color: white;
-    backdrop-filter: blur(20px);
-    border-top-left-radius: 100px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    
-}
-
-.abt-head{
+.skills{
+    margin-top: 150px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-flow: wrap-reverse;
 }
-
- .abt-head ion-icon{
-    font-size: 50px;
- }
-.about hr{
-
-    height: 3px;
-    width: 89%;
-}
-
-.about h3{
-    line-height: 30px;
-}
-.gate{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 3% 2%;
-    border-radius: 18px;
-    margin-right: 9%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
-}
-#gate{
-    height: 200px;
-    width: 350px;
-    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
-    background-image: url(images/gate.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-}
-
-.abt-par{
-    margin-right: 9%;
-}
-
-.gate-text,.abt-par{
-    padding: 3%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
-    box-shadow:  2px 2px 2px hsla(0,0%,100%,.25), inset -8px -8px 8px rgba(0,0,0,.25);
-    border-radius: 16px;
-}
-
-
-
-.fdr-abt{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.fdr-text{
-    margin-top: auto;
-}
-.fdrimg{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-image: url(images/jb.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 110%;
-    transition: 600ms ease;
-}
-
-
-.fdrimg:hover{
-    box-shadow: 0 0 20px white;
-}
-
 /* footer */
-
 footer{
     margin-top: auto;
     width: 100%;
@@ -521,53 +358,64 @@ footer hr{
 .copyright{
    text-align: center;
 }
-/* responsive */
+/* responsiveness */
 
-@media only screen and (max-width: 700px) {
-   
-    .menu, .search{
-        display: none;
-    }
-    
-    
-    .three-line{
-        display: block;
-    }
-    
-    .content{
-        position: relative;
-        z-index: 1;
+@media(max-width:1200px){
+    .header{
+        padding: 2rem;
     }
 
-    .content h1 {
-        font-family: "Poppins";
-        font-size: 20px;
-        padding-left: 20px;
-        margin-top: 9%;
-        letter-spacing: 2px;
-    }
-    .poster-text span{
-        font-size: 20px;
+    .home{
+        /* padding: 3rem 2rem; */
     }
     
-    .content .cn {
-        width: 80px;
-        height: 40px;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+
+@media(max-width:768px){
+    .bars{
+        display: inline-block;
     }
 
-    .content .cn a{
-        font-size: 10px;
-    }
-
-    .poster img{
-        position: relative;
-        z-index: inherit;
-        width: 400px;
-    }
     
-    footer{
-        height: 100%;
-        font-size: 10px;
-    }
 
+    .navbar{
+        position: fixed;
+        top: 0; left: -110%;
+        background-color: white;
+        z-index: 10000;
+        width: 35rem;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+        
+        
+        &.active{
+            box-shadow: 0 0 0 100vw rgba(0,0,0,0.1);
+            left: 0;
+        }
+        .close{
+            display: inline-block;
+        }
+        ul{
+            display: flex;
+            backdrop-filter: blur(20px);
+            flex-flow: column;
+            align-items: center;
+            margin-top: 10%;
+        }
+        ul li{
+            margin-top: 5rem;
+        }
+        ul li a{
+            color: black;
+        }
+    }
 }

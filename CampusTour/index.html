@@ -1,186 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Webpage Design</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aot tour</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
 
-  <body>
-    <div class="main">
-      <!-- Navigation Bar -->
+    <!-- cdn file link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-      <div class="navbar">
-        <div class="icon">
-          <img src="images/logo.png" alt="logo" />
-        </div>
-        <ul class="menu">
-          <li class="list-item"><a href="#">HOME</a></li>
-          <li class="list-item"><a href="#about">ABOUT</a></li>
-          <li class="list-item"><a href="#campus">CAMPUS_TOUR</a></li>
-          <li class="list-item"><a href="#department">DEPARTMENT</a></li>
-          <li class="list-item"><a href="#">CONTACT</a></li>
-        </ul>
-
-        <div class="search">
-          <input
-            class="srch"
-            type="search"
-            name=""
-            placeholder="Type To text"
-          />
-          <a href="#"> <button class="btn">Search</button></a>
-        </div>
-        <div class="three-line">
-            <ion-icon name="reorder-three-outline"></ion-icon>
-        </div>
-      </div>
-
-      <!-- content -->
-
-      <div class="content">
-        <div class="poster-text">
-          <h1>AOT CAMPUS <br /><span>TOUR</span> <br />WEBSITE</h1>
-          <p class="par"></p>
-
-          <button class="cn"><a href="#">JOIN US</a></button>
-        </div>
-        <div class="poster">
-          <img src="images/image.png" alt="" />
-        </div>
-      </div>
-      
-      <!-- campus tour -->
-
-      <div class="campus" id="campus">
-        <div class="campus-text">
-          <h1>Hello Welcome To our college campus</h1>
-          <img src="images/love.png" alt="">
-        </div>
-        <hr>
-        <div class="buildings">
-          <div class="card"><h3>Buildings</h3></div>
-          <div class="card"><h3>Campus</h3></div>
-          <div class="card"><h3>PlayGround</h3></div>
-          <div class="card"><h3>Faculty</h3></div>
-          <div class="card"><h3>Academic</h3></div>
-          <div class="card"><h3>Fest</h3></div>
-        </div>
-      </div>  
-
-      <!-- department -->
-
-      <div class="department" id="department">
-          <h1>Department</h1>
-          <hr>
-          <div class="dep-card">
-            <div class="dep"><h4>CSE</h4></div>
-            <div class="dep"><h4>ECE</h4></div>
-            <div class="dep"><h4>EEE</h4></div>
-            <div class="dep"><h4>CSBS</h4></div>
-            <div class="dep"><h4>EE</h4></div>
-            <div class="dep"><h4>MCA</h4></div>
-          </div>
-      </div>
-
-      <!-- about  -->
-
-      <div class="about" id="about">
-       <div class="abt-head">
-        <ion-icon name="cube-outline"></ion-icon>
-        <h1>About</h1>
-       </div>
-        <hr>
-        <br />
-        <p>
-          This website is a guide for your campus tour in academy of technology
-          <br />
-          this collage has a big and beutifull campus. The education curicullam
-          is well prepared.
-          <br />
-          <br>
-          <h2>Academy of Technology</h2>
-          <br>
-          <p class="abt-par">The Academy of Technology or AOT is a self-financed undergraduate engineering <br> college in Adisaptagram, Hooghly, West Bengal, India. It was established in 2003 by <br> "Ananda Educational Development and Charitable Organisation", a trust.</p>
-          <br>
-        </p>
-        <div class="gate">
-          <div id="gate"></div>
-          <div class="gate-text">
-            <h4>Grand Trunk road, Adisaptagram, Adecconagar
-              <br>
-              Bandel, Hoogly ,721212
-            </h4>
-            <br>
-            <p><ion-icon name="mail-outline"></ion-icon> academy.of.technology@aot.edu.in 
-              <br> <ion-icon name="call-outline"></ion-icon> +91-9883567630
-            </p>
-          </div>
-        </div>
-        <br>
-        <div class="owner">
-          <h2>Founder</h2>
-          <br>
-          <div class="fdr-abt">
-            <div class="fdrimg"></div>
-            <div class="fdr-text">
-              <p><h4>Prof. Jagannath Banarjee</h4> (1966-2023)</p>
-              <p>Founder of Academy Of Technology</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- footer -->
-
-      <footer>
-        <div class="row">
-          <div class="col">
-            <img src="images/logo.png" alt="logo" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-              totam, esse debitis vitae assumenda praesentium sit nostrum,
-            </p>
-          </div>
-          <div class="col">
-            <h3>Adress</h3>
-            <p>Grand Tank Road</p>
-            <p>Adisaptagram</p>
-            <p>Adecconagar , Bandel</p>
-            <p>Hoogly , 721212</p>
-            <p class="email">academy.of.technology@aot.edu.in</p>
-            <h4>+91 9883464589</h4>
-          </div>
-          <div class="col">
-            <h3>Links</h3>
+    <!-- ion icons attached file -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+    
+    <!-- header section starts -->
+<div class="main">
+    <div class="header">
+        <a href="#" class="logo"><img src="images/logo.png" alt="" style="width: 64px;"></a> 
+ 
+        <!-- navigation bar -->
+ 
+        <nav class="navbar">
+            <ion-icon name="close-outline" class="close"></ion-icon>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Campus Tour</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-          </div>
-          <div class="col">
-            <h3>Newsletter</h3>
-            <form>
-                <ion-icon name="mail-outline"></ion-icon>
-                <input type="email" placeholder="Enter your email id" required>
-                <button type="submit"><ion-icon name="arrow-forward-outline"></ion-icon></button>
-            </form>
-            <div class="social-icon">
-                <ul>
-                    <li><a href="https://www.facebook.com/www.aot.edu.in" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="https://www.linkedin.com/school/academy-of-technology/?originalSubdomain=in" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li><a href="https://www.instagram.com/aotconnect/"><ion-icon name="logo-instagram" target></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
+        </nav>
+
+        <div class="nav-end">
+
+            <div class="search">
+
+                <input type="search" class="srch" id="search" placeholder="Type To text">
+                <a href="#"><button>search</button></a>
+            
             </div>
-          </div>
+
+            <div class="bars">
+
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            
+            </div>
+            
+        </div>    
+    </div>    
+</div>   
+        <!-- content section starts -->
+
+    <div class="home" id="home">
+        <div class="home-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/aotcampus.jpg) no-repeat;">
+                        <div class="slogan">
+                            <span>Never stop</span>
+                            <h3>exploring</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Cum suscipit adipisci accusantium voluptatem nemo <br> perspiciatis rerum magni tempore doloremque vitae ut laborum sit modi placeat, excepturi odio! Ducimus, iusto soluta?</p>
+                            <a href="#" class="btn">get started</a>     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(aotcampus.jpg) no-repeat;">
+                        <div class="slogan">
+                            <span>Never stop</span>
+                            <h3>exploring</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Cum suscipit adipisci accusantium voluptatem nemo perspiciatis rerum magni tempore doloremque vitae ut laborum sit modi placeat, excepturi odio! Ducimus, iusto soluta?</p>
+                            <a href="#" class="btn">get started</a>     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/campus\ night.jpg) no-repeat;">
+                        <div class="slogan">
+                            <span>Never stop</span>
+                            <h3>exploring</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Cum suscipit adipisci accusantium voluptatem nemo perspiciatis rerum magni tempore doloremque vitae ut laborum sit modi placeat, excepturi odio! Ducimus, iusto soluta?</p>
+                            <a href="#" class="btn">get started</a>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <hr>
-        <p class="copyright">Academy Of Technology &copy; 2006 copyright</p>
-      </footer>
+    </div>        
+        <!-- content section ends -->
+    
+    
+
+        <!-- content section starts -->
+    <div class="content">
+        <div class="slogan">
+            <h1>Academy Of technology</h1>
+            <h4>achive your dream to sucess</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="campus">
+            <div class="cards">
+                <div class="card one"></div>
+                <h4>department</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+            </div>
+            <div class="cards">
+                <div class="card two"></div>
+                <h4>department</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+            </div>
+
+            <div class="cards">
+                <div class="card three"></div>
+                <h4>department</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+            </div>
+
+            <div class="cards">
+                <div class="card four"></div>
+                <h4>department</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+            </div>
+
+            <div class="cards">
+                <div class="card four"></div>
+                <h4>department</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+            </div>
+        </div>
+        <div class="poster">
+            <div class="skills">
+                <img src="images/image.png" alt="img">
+                <div class="text">
+                    <h1>Skills</h1>
+                    <p>At the Academy of Technology, we are resolute in our commitment to maintaining a campus <br> environment that is entirely free from the detrimental practice of ragging. To reinforce this <br> commitment, we have established a robust Anti-Ragging Committee that diligently oversees and <br> regulates campus activities. This committee is proactive in ensuring the strict adherence to our anti-ragging <br> policies. Regular inspections and monitoring are conducted to identify and address any <br> potential instances promptly. In the rare event that an issue arises, the Anti-Ragging Committee <br> takes swift and decisive action, implementing proper measures to eradicate any such behavior and <br> provide a secure atmosphere for all students. This stringent approach reflects our dedication <br> fostering a campus culture characterized by mutual respect, collaboration, and a genuine focus <br> on academic and personal growth.</p>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="text">
+                    <h1>Skills</h1>
+                    <p>At the Academy of Technology, we are resolute in our commitment to maintaining a campus <br> environment that is entirely free from the detrimental practice of ragging. To reinforce this <br> commitment, we have established a robust Anti-Ragging Committee that diligently oversees and <br> regulates campus activities. This committee is proactive in ensuring the strict adherence to our anti-ragging <br> policies. Regular inspections and monitoring are conducted to identify and address any <br> potential instances promptly. In the rare event that an issue arises, the Anti-Ragging Committee <br> takes swift and decisive action, implementing proper measures to eradicate any such behavior and <br> provide a secure atmosphere for all students. This stringent approach reflects our dedication <br> fostering a campus culture characterized by mutual respect, collaboration, and a genuine focus <br> on academic and personal growth.</p>
+                </div>
+                <img src="images/ragcam.png" alt="img">
+
+            </div>
+        </div>
     </div>
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-  </body>
+
+
+
+
+
+        <!-- catagory section ends -->
+
+        <!-- footer -->
+        <footer>
+            <div class="row">
+              <div class="col">
+                <img src="images/logo.png" alt="logo" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  totam, esse debitis vitae assumenda praesentium sit nostrum,
+                </p>
+              </div>
+              <div class="col">
+                <h3>Adress</h3>
+                <p>Grand Tank Road</p>
+                <p>Adisaptagram</p>
+                <p>Adecconagar , Bandel</p>
+                <p>Hoogly , 721212</p>
+                <p class="email">academy.of.technology@aot.edu.in</p>
+                <h4>+91 9883464589</h4>
+              </div>
+              <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Campus Tour</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Newsletter</h3>
+                <form>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </form>
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/www.aot.edu.in" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/school/academy-of-technology/?originalSubdomain=in" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/aotconnect/"><ion-icon name="logo-instagram" target></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">Academy Of Technology &copy; 2006 copyright</p>
+          </footer>
+    
+
+    <!-- link js file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+   
+</body>
 </html>
