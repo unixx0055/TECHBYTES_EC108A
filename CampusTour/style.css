@@ -553,7 +553,9 @@ footer hr{
         display: inline-block;
     }
 
-    
+    .search{
+        display: none;
+    }
 
     .navbar{
         position: fixed;
