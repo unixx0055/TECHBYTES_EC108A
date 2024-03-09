@@ -29,7 +29,7 @@ we love this project learn a little bit but it was full of enjoymenmt 🎉
 
 1. Srijan sur 🧑‍🦱
 2. Subhajit Roy 🧔‍♂️
-3. Srija Roy 👩‍🦰
+3. Srija Ray 👩‍🦰
 4. Sourav Kumbhakar 🧑‍🦱
 
 ————————————
